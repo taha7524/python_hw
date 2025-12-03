@@ -8,7 +8,7 @@ def click_blue_button():
     driver = webdriver.Chrome(
         service=ChromeService(ChromeDriverManager().install())
     )
-    driver.get("http://uitestingplayground.com/classattr")
+    driver.get("http://uitestingplayground.com/dynamicid")
     sleep(2)
 
     blue_button = driver.find_element(By.CSS_SELECTOR, "button.btn-primary")
